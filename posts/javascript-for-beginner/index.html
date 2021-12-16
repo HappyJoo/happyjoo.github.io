@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    
+      |
+      （有编程经验）JavaScript 入门避坑指南
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.8707c42f1613a6033867680bde7037f2bd8bd7fc42399bc4055cbb3ee6892e6d.css"
+    integrity="sha256-hwfELxYTpgM4Z2gL3nA38r2L1/xCOZvEBVy7PuaJLm0="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.8f07fad4abedfd5eb1396c6fef85ba7ec00ec867a79fb545c9db18df87f6760a.css"
+    integrity="sha256-jwf61Kvt/V6xOWxv74W6fsAOyGenn7VFydsY34f2dgo="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://happyjoo.github.io/posts/javascript-for-beginner/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.413f798d8aa82610bef17a5ca1d7e962ec185be395f1aeb3f45d1891af568b65.js"
+    integrity="sha256-QT95jYqoJhC&#43;8XpcodfpYuwYW&#43;OV8a6z9F0Yka9Wi2U="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.fcf9526f15b3b4e08472de192969ab28a4cdcb32ac94f83e85a8b84e9b45acd2.js"
+      integrity="sha256-/PlSbxWztOCEct4ZKWmrKKTNyzKslPg&#43;hai4TptFrNI="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="（有编程经验）JavaScript 入门避坑指南"/>
+<meta name="twitter:description" content="（有编程经验）JavaScript 入门避坑指南  JavaScript 不区分整数和浮点数，统一用 Number 表示。 字符串是以单引号 &#39; 或双引号 &quot; 括起来的任意文本 由于 JavaScript 的设计缺陷，不要使用 == 比较，始终坚持使用 === 比较。 另一个例外是 NaN 这个特殊的 Number 与所有其他值都不相等，包括它自己：唯一能判断 NaN 的方法是通过 isNaN() 函数： 由于精度问题，要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：Math."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "（有编程经验）JavaScript 入门避坑指南",
+        "headline": "（有编程经验）JavaScript 入门避坑指南",
+        "alternativeHeadline": "",
+        "description": "
+      
+        （有编程经验）JavaScript 入门避坑指南  JavaScript 不区分整数和浮点数，统一用 Number 表示。 字符串是以单引号 \x27 或双引号 \x26quot; 括起来的任意文本 由于 JavaScript 的设计缺陷，不要使用 == 比较，始终坚持使用 === 比较。 另一个例外是 NaN 这个特殊的 Number 与所有其他值都不相等，包括它自己：唯一能判断 NaN 的方法是通过 isNaN() 函数： 由于精度问题，要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：Math.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/happyjoo.github.io\/posts\/javascript-for-beginner\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-12-16T11:18:02.00Z",
+        "datePublished": "2021-12-16T11:18:02.00Z",
+        "dateModified": "2021-12-16T11:18:02.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://happyjoo.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/happyjoo.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/happyjoo.github.io\/posts\/javascript-for-beginner\/",
+        "wordCount" : "116",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/" alt="profile picture" />
+        <h3 title=""><a href="/"></a></h3>
+        <div class="description">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          
+          2021
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>（有编程经验）JavaScript 入门避坑指南</h1>
+        
+      </div><h3 id="有编程经验javascript-入门避坑指南">（有编程经验）JavaScript 入门避坑指南</h3>
+<ol>
+<li>JavaScript 不区分整数和浮点数，统一用 <code>Number</code> 表示。</li>
+<li>字符串是以单引号 <code>'</code> 或双引号 <code>&quot;</code> 括起来的任意文本</li>
+<li>由于 JavaScript 的设计缺陷，不要使用 <code>==</code> 比较，始终坚持使用 <code>===</code> 比较。</li>
+<li>另一个例外是 <code>NaN</code> 这个特殊的 <code>Number</code> 与所有其他值都不相等，包括它自己：唯一能判断 <code>NaN</code> 的方法是通过 <code>isNaN()</code> 函数：</li>
+<li>由于精度问题，要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：<code>Math.abs(1 / 3 - (1 - 2 / 3)) &lt; 0.0000001; // true</code></li>
+<li>大多数情况下，我们都应该用 <code>null</code>, <code>undefined</code> 仅仅在判断函数参数是否传递的情况下有用。</li>
+<li>JavaScript 的数组可以包括任意数据类型。出于代码的可读性考虑，强烈建议直接使用<code>[]</code>。</li>
+<li>变量名是大小写英文、数字、<code>$</code> 和 <code>_</code> 的组合，不能数字开头，不能是关键字。申明用 <code>var</code>。</li>
+<li>如果一个变量没有通过<code>var</code>申明就被使用，那么该变量就自动被申明为全局变量。</li>
+<li>ES6新增 <code>var name = '小明';var age = 20;var message = `你好, ${name}, 你今年${age}岁了!`;</code></li>
+<li>需要特别注意的是，字符串是不可变的，如果对字符串的某个索引赋值，不会有任何错误，但是，也没有任何效果。</li>
+<li>请注意，如果通过索引赋值时，索引超过了范围，同样会引起<code>Array</code>，即数组大小的变化。</li>
+<li>数组常用属性：length, indexOf, slice, push, pop, unshift, shift, sort, reverse, splice, concat, join</li>
+<li>注意，最后一个键值对不需要在末尾加<code>,</code>，如果加了，有的浏览器（如低版本的IE）将报错。</li>
+<li>如果属性名包含特殊字符，就必须用<code>''</code>括起来，访问这个属性也无法使用<code>.</code>操作符，必须用<code>['xxx']</code>来访问。</li>
+<li>实际上 JavaScript 对象的所有属性都是字符串，不过属性对应的值可以是任意数据类型。</li>
+<li>JavaScript 规定，访问不存在的属性不报错，而是返回<code>undefined</code>。</li>
+<li>由于 JavaScript 的对象是动态类型，你可以自由地给一个对象添加或删除属性。</li>
+<li>如果我们要检测对象是否拥有某一属性，可以用 <code>in</code> 操作符。不过要小心，该属性可能是继承得到的。</li>
+<li>要判断一个属性是否是该对象自身拥有的，而不是继承得到的，可以用<code>hasOwnProperty()</code>方法</li>
+<li>在 <code>if...else...</code> 中，我们建议永远都要写上<code>{}</code>。</li>
+<li>JavaScript把<code>null</code>、<code>undefined</code>、<code>0</code>、<code>NaN</code>和空字符串<code>''</code>视为<code>false</code>，其他值一概视为<code>true</code>。</li>
+<li>循环：<code>for</code>，<code>for...in</code>，<code>while</code>, <code>do...while</code>。</li>
+<li><code>Set</code>和<code>Map</code>类似，也是一组 key 的集合，但不存储 value。所以，在<code>Set</code>中，没有重复的 key。用<code>add()</code>添加元素，用<code>delete()</code>删除元素。</li>
+<li><code>Map</code>和<code>Set</code>是 ES6 标准新增的数据类型，请根据浏览器的支持情况决定是否要使用。</li>
+<li>遍历用法：https://www.liaoxuefeng.com/wiki/1022910821149312/1023024358748480</li>
+<li>函数就是最基本的一种代码抽象的方式。</li>
+<li>定义函数：function name(variable) { do something }</li>
+</ol>
+<p>好的，以上完全只是<a href="https://www.liaoxuefeng.com/wiki/1022910821149312">廖雪峰的JavaScript教程</a>的入门部分，后面的完全没有看，仅供参考。</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          
+          2021
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.bdc7b23aff63497a79433b3920b03e2473399d90ad4c2d87cf7c08d33d61966f.js"
+    integrity="sha256-vceyOv9jSXp5Qzs5ILA&#43;JHM5nZCtTC2Hz3wI0z1hlm8="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
